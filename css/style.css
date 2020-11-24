@@ -102,19 +102,28 @@ header p{
 #boxes{
  display:flex;
  justify-content: space-around;
-
+ align-items: flex-start;
+ flex-wrap: wrap;
 
 }
 
 .box_1{
   padding: 20px 10px;
-  min-width: 250px;
-  height: 250px;
+  width: 250px;
+  height: auto;
   text-align: center;
   margin: 20px 10px;
   border: #c6b497 solid 2px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 
+.box_1 p{
+  padding: 10px 20px;
+}
 /*section_b*/
 
 .section_b{
@@ -127,6 +136,7 @@ header p{
   width: 50%;
   text-align: justify;
   margin: 20px auto;
+  border-radius: 25px;
 }
 
 /*blog*/
@@ -142,6 +152,7 @@ header p{
   padding: 25px;
   text-align: left;
   border: #c6b497 solid 2px;
+  border-radius: 10px;
 }
 
 .blog_post h2, h3{
@@ -150,19 +161,29 @@ header p{
 
 /*form*/
 
+#section_c{
+  display: flex;
+  justify-content: space-around;
+}
+
 #form img{
   margin: 25px 0;
-  width: 35vw;
-  float:left;
+  width: 40%;
+  max-height: 270px;
+  object-fit: cover;
+}
+
+#form img:hover{
+  filter: grayscale();
 }
 
 .form_1{
   margin: 25px 0;
   padding: 35px;
-  width: 35vw;
+  width: 40%;
   height: 200px;
   background-color: #cfd3ce;
-  float: right;
+  border-radius: 10px;
 }
 
 .form_1 input[type=text]{
@@ -218,7 +239,7 @@ footer{
 
 @media (max-width:800px){
 
-  #boxes{
+  #boxes, #section_c{
   flex-direction: column;
   align-items: center;
   margin: 30px 0;
@@ -226,11 +247,28 @@ footer{
 
   .box_1{
     padding: 20px 10px;
-    width: 60%;
+    width: 75%;
     height: 250px;
     text-align: center;
     margin: 20px 10px;
     border: #c6b497 solid 2px;
+  }
+
+  .box_1 p{
+    padding: 10px 20px;
+  }
+
+  #form img{
+    margin: 25px 0;
+    width: 80%;
+  }
+
+  .form_1{
+    margin: 15px 0;
+    padding: 35px;
+    width: 65%;
+    height: 200px;
+    background-color: #cfd3ce;
   }
 
 }
