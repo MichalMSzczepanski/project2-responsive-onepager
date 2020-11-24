@@ -32,6 +32,7 @@
 .button_1:hover{
   background-color: #c6b497;
   color: #fff;
+  transform: scale(1.1);
 }
 
 .button_2{
@@ -49,6 +50,7 @@
 .button_2:hover{
   background-color: #839b97;
   color: #fff;
+  transform: scale(1.1);
 }
 
 
@@ -65,6 +67,7 @@
 .form_button:hover{
   background-color: #c6b497;
   color: #fff;
+  transform: scale(1.05);
 }
 /*header*/
 
